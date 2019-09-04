@@ -5,7 +5,7 @@ echo "Setting up liquibase"
 
 cat <<CONF > /liquibase.properties
   driver: org.postgresql.Driver
-  classpath:/usr/local/bin/postgresql-9.3-1102.jdbc41.jar
+  classpath:/usr/local/bin/postgresql-42.2.6.jar
   url: jdbc:postgresql://$DB_PORT_5432_TCP_ADDR:$DB_PORT_5432_TCP_PORT/$POSTGRES_USER
   username: $DB_ENV_POSTGRES_USER
   password: $DB_ENV_POSTGRES_PASSWORD
